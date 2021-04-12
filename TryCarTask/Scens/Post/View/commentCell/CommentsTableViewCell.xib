@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentsTableViewCell" rowHeight="173" id="KGk-i7-Jjw" customClass="CommentsTableViewCell" customModule="TryCarTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vq-K9-Az3">
+                        <rect key="frame" x="4" y="10" width="389" height="163"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nour Heagzy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcZ-mA-Dvx">
+                                <rect key="frame" x="10" y="10" width="343" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="19" id="c2J-q5-Rl6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="xlH-sw-dDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="14"/>
+                                <color key="textColor" red="0.7733839897" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fjkkfjhfdkjhfdkjhfkjdh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDc-E8-gPZ">
+                                <rect key="frame" x="10" y="39" width="369" height="124"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-Q1-B5M">
+                                <rect key="frame" x="357" y="2" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4xm-6e-ffd"/>
+                                    <constraint firstAttribute="height" constant="30" id="PwT-mZ-jSe"/>
+                                </constraints>
+                                <state key="normal" image="suit.heart" catalog="system"/>
+                                <connections>
+                                    <action selector="btnFav:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qFM-SL-Pya"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="0.25823540087567259" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sdl-Q1-B5M" firstAttribute="leading" secondItem="hcZ-mA-Dvx" secondAttribute="trailing" constant="4" id="2xh-os-06P"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdl-Q1-B5M" secondAttribute="trailing" constant="2" id="8Gn-6K-bpb"/>
+                            <constraint firstAttribute="bottom" secondItem="vDc-E8-gPZ" secondAttribute="bottom" id="LXP-XX-iQ7"/>
+                            <constraint firstItem="vDc-E8-gPZ" firstAttribute="leading" secondItem="hcZ-mA-Dvx" secondAttribute="leading" id="PP1-8Z-Aph"/>
+                            <constraint firstItem="vDc-E8-gPZ" firstAttribute="top" secondItem="hcZ-mA-Dvx" secondAttribute="bottom" constant="10" id="ZBh-h5-fjf"/>
+                            <constraint firstItem="hcZ-mA-Dvx" firstAttribute="top" secondItem="5vq-K9-Az3" secondAttribute="top" constant="10" id="iow-6c-zCR"/>
+                            <constraint firstItem="Sdl-Q1-B5M" firstAttribute="top" secondItem="5vq-K9-Az3" secondAttribute="top" constant="2" id="kmS-PH-U7x"/>
+                            <constraint firstAttribute="trailing" secondItem="vDc-E8-gPZ" secondAttribute="trailing" constant="10" id="oRu-5W-Op1"/>
+                            <constraint firstItem="hcZ-mA-Dvx" firstAttribute="leading" secondItem="5vq-K9-Az3" secondAttribute="leading" constant="10" id="uk5-eZ-j72"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5vq-K9-Az3" secondAttribute="bottom" id="HxA-fc-lOw"/>
+                    <constraint firstItem="5vq-K9-Az3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="MTZ-CH-kYD"/>
+                    <constraint firstItem="5vq-K9-Az3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VzY-vC-1XY"/>
+                    <constraint firstAttribute="trailing" secondItem="5vq-K9-Az3" secondAttribute="trailing" constant="4" id="uVr-0M-d0v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFavourit" destination="Sdl-Q1-B5M" id="4ME-9L-Ss4"/>
+                <outlet property="lblBody" destination="vDc-E8-gPZ" id="LdG-L5-dMe"/>
+                <outlet property="lblTitle" destination="hcZ-mA-Dvx" id="c8c-0K-eMf"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="60.602678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

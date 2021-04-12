@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r6o-gC-aQ1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favourites-->
+        <scene sceneID="du3-qA-q37">
+            <objects>
+                <viewController storyboardIdentifier="MyFavouriteViewController" id="4qf-o7-b2A" customClass="MyFavouriteViewController" customModule="TryCarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8v-Nj-frn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-F7-R4F">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4qf-o7-b2A" id="Uvm-Yr-oH7"/>
+                                    <outlet property="delegate" destination="4qf-o7-b2A" id="bxv-ll-hjT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fMh-NG-vY0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OZp-F7-R4F" firstAttribute="top" secondItem="fMh-NG-vY0" secondAttribute="top" id="BgV-2X-inJ"/>
+                            <constraint firstItem="fMh-NG-vY0" firstAttribute="trailing" secondItem="OZp-F7-R4F" secondAttribute="trailing" id="Q3h-h6-j9d"/>
+                            <constraint firstItem="fMh-NG-vY0" firstAttribute="bottom" secondItem="OZp-F7-R4F" secondAttribute="bottom" id="QeH-Rd-Xj2"/>
+                            <constraint firstItem="OZp-F7-R4F" firstAttribute="leading" secondItem="fMh-NG-vY0" secondAttribute="leading" id="jP6-pj-PWD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="heart" catalog="system" id="Qbl-Ee-pUi"/>
+                    <connections>
+                        <outlet property="tvComments" destination="OZp-F7-R4F" id="e2q-yh-msi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYM-IU-FJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="-2"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="Q8l-B1-E8P">
+            <objects>
+                <viewController storyboardIdentifier="PostsViewController" id="Vhj-Kt-tp3" customClass="PostsViewController" customModule="TryCarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="958-Ei-CRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mb6-gj-Ca0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vhj-Kt-tp3" id="UhL-5e-FrY"/>
+                                    <outlet property="delegate" destination="Vhj-Kt-tp3" id="gNT-uK-90T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qxg-bc-aUM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qxg-bc-aUM" firstAttribute="trailing" secondItem="Mb6-gj-Ca0" secondAttribute="trailing" id="GIK-8Z-pzI"/>
+                            <constraint firstItem="Mb6-gj-Ca0" firstAttribute="top" secondItem="qxg-bc-aUM" secondAttribute="top" id="H3I-1a-sgb"/>
+                            <constraint firstItem="Mb6-gj-Ca0" firstAttribute="leading" secondItem="qxg-bc-aUM" secondAttribute="leading" id="egf-rd-ZAz"/>
+                            <constraint firstItem="qxg-bc-aUM" firstAttribute="bottom" secondItem="Mb6-gj-Ca0" secondAttribute="bottom" id="x8j-8X-tZX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Posts" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="dD8-jo-ldI"/>
+                    <connections>
+                        <outlet property="tvPosts" destination="Mb6-gj-Ca0" id="47S-C3-ICC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jig-Or-D4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="-608"/>
+        </scene>
+        <!--Comments Controller-->
+        <scene sceneID="sYg-2O-wcM">
+            <objects>
+                <viewController storyboardIdentifier="CommentsController" id="vZn-yB-ukK" customClass="CommentsController" customModule="TryCarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KiO-Jj-Jab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="adF-CI-7oT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vZn-yB-ukK" id="CCs-Yn-Ahn"/>
+                                    <outlet property="delegate" destination="vZn-yB-ukK" id="ABo-hu-iSQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DHQ-NK-quV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DHQ-NK-quV" firstAttribute="bottom" secondItem="adF-CI-7oT" secondAttribute="bottom" id="1Es-5l-OF4"/>
+                            <constraint firstItem="adF-CI-7oT" firstAttribute="leading" secondItem="DHQ-NK-quV" secondAttribute="leading" id="QnY-aK-APg"/>
+                            <constraint firstItem="DHQ-NK-quV" firstAttribute="trailing" secondItem="adF-CI-7oT" secondAttribute="trailing" id="VL9-Bd-Cir"/>
+                            <constraint firstItem="adF-CI-7oT" firstAttribute="top" secondItem="DHQ-NK-quV" secondAttribute="top" id="uw4-4R-0AQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tvComments" destination="adF-CI-7oT" id="SRa-MI-HSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rov-PM-RjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="-589"/>
+        </scene>
+        <!--Tab Bare-->
+        <scene sceneID="Vh6-hY-WyE">
+            <objects>
+                <tabBarController id="r6o-gC-aQ1" customClass="tabBare" customModule="TryCarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ORe-pA-LdG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVE-Ye-x14" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="-305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TryCarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
