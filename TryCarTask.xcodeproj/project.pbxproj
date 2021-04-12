@@ -11,6 +11,8 @@
 		613CBDE73851381A02411F85 /* Pods_TryCarTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6715DDAB66AE05179A632 /* Pods_TryCarTask.framework */; };
 		A116BA87037F7A110C4DE60A /* Pods_TryCarTask_TryCarTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F19CBDB96CBD70CB30489CE /* Pods_TryCarTask_TryCarTaskUITests.framework */; };
 		B163A3F226238504002D6DC7 /* CommentsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163A3F126238504002D6DC7 /* CommentsObject.swift */; };
+		B163A3F4262453F0002D6DC7 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163A3F3262453F0002D6DC7 /* CommentsViewModel.swift */; };
+		B163A3F6262453FF002D6DC7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163A3F5262453FF002D6DC7 /* Comment.swift */; };
 		B1702EE1261DB8300058C53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702EE0261DB8300058C53A /* AppDelegate.swift */; };
 		B1702EE3261DB8300058C53A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702EE2261DB8300058C53A /* SceneDelegate.swift */; };
 		B1702EE5261DB8300058C53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702EE4261DB8300058C53A /* ViewController.swift */; };
@@ -43,8 +45,6 @@
 		B1702F98261E82410058C53A /* PostRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702F97261E82410058C53A /* PostRespose.swift */; };
 		B1702F9A261E88030058C53A /* tabBare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702F99261E88020058C53A /* tabBare.swift */; };
 		B1702F9E262132950058C53A /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702F9D262132940058C53A /* CommentsController.swift */; };
-		B1702FA0262132BC0058C53A /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702F9F262132BC0058C53A /* CommentsViewModel.swift */; };
-		B1702FA2262132F50058C53A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702FA1262132F50058C53A /* Comment.swift */; };
 		B1702FA7262135720058C53A /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702FA5262135720058C53A /* CommentsTableViewCell.swift */; };
 		B1702FA8262135720058C53A /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1702FA6262135720058C53A /* CommentsTableViewCell.xib */; };
 		B1702FAA26213CC60058C53A /* MyFavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1702FA926213CC50058C53A /* MyFavouriteViewController.swift */; };
@@ -79,6 +79,8 @@
 		6F19CBDB96CBD70CB30489CE /* Pods_TryCarTask_TryCarTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryCarTask_TryCarTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C9A8870EF4D4C6007BAC47 /* Pods-TryCarTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryCarTask.debug.xcconfig"; path = "Target Support Files/Pods-TryCarTask/Pods-TryCarTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B163A3F126238504002D6DC7 /* CommentsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsObject.swift; sourceTree = "<group>"; };
+		B163A3F3262453F0002D6DC7 /* CommentsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		B163A3F5262453FF002D6DC7 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B1702EDD261DB8300058C53A /* TryCarTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryCarTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1702EE0261DB8300058C53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1702EE2261DB8300058C53A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,8 +119,6 @@
 		B1702F97261E82410058C53A /* PostRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRespose.swift; sourceTree = "<group>"; };
 		B1702F99261E88020058C53A /* tabBare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBare.swift; sourceTree = "<group>"; };
 		B1702F9D262132940058C53A /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
-		B1702F9F262132BC0058C53A /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsViewModel.swift; path = ../../../../../../../CommentsViewModel.swift; sourceTree = "<group>"; };
-		B1702FA1262132F50058C53A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = ../../../../../../../Comment.swift; sourceTree = "<group>"; };
 		B1702FA5262135720058C53A /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
 		B1702FA6262135720058C53A /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
 		B1702FA926213CC50058C53A /* MyFavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteViewController.swift; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 			children = (
 				B1702F8C261E7C420058C53A /* PostsApi.swift */,
 				B1702F97261E82410058C53A /* PostRespose.swift */,
-				B1702FA1262132F50058C53A /* Comment.swift */,
+				B163A3F5262453FF002D6DC7 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,8 +353,8 @@
 		B1702F9B26212EDF0058C53A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B163A3F3262453F0002D6DC7 /* CommentsViewModel.swift */,
 				B1702F8A261E7C310058C53A /* PostsViewModel.swift */,
-				B1702F9F262132BC0058C53A /* CommentsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -666,9 +666,10 @@
 				B1702EE5261DB8300058C53A /* ViewController.swift in Sources */,
 				B1702F8D261E7C420058C53A /* PostsApi.swift in Sources */,
 				B1702F24261E6F740058C53A /* BaseViewController.swift in Sources */,
-				B1702FA2262132F50058C53A /* Comment.swift in Sources */,
 				B1702F26261E6F740058C53A /* ErrorObj.swift in Sources */,
+				B163A3F4262453F0002D6DC7 /* CommentsViewModel.swift in Sources */,
 				B1702F30261E6F740058C53A /* NetworkReachabilityManger.swift in Sources */,
+				B163A3F6262453FF002D6DC7 /* Comment.swift in Sources */,
 				B1702F9E262132950058C53A /* CommentsController.swift in Sources */,
 				B1702F27261E6F740058C53A /* MoyaPlugin+ PrintRequest.swift in Sources */,
 				B1702FB12621CC5A0058C53A /* Realm Ex.swift in Sources */,
@@ -678,7 +679,6 @@
 				B1702EE1261DB8300058C53A /* AppDelegate.swift in Sources */,
 				B1702F89261E7C1B0058C53A /* PostsViewController.swift in Sources */,
 				B1702FAA26213CC60058C53A /* MyFavouriteViewController.swift in Sources */,
-				B1702FA0262132BC0058C53A /* CommentsViewModel.swift in Sources */,
 				B1702F63261E71610058C53A /* DashedView.swift in Sources */,
 				B1702F65261E71610058C53A /* Shadow-View.swift in Sources */,
 				B1702F6A261E71610058C53A /* Observable.swift in Sources */,
